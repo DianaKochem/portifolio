@@ -147,7 +147,8 @@ i {
     color: var(--color-secundary);
 }
 
-.conteudo-primario-descricao p#apresentacao {
+.apresentacao {
+    margin-top: 15px;
     font-weight: 400;
     font-size: 24px;
     text-align: justify;
