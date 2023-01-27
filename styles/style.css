@@ -248,7 +248,8 @@ i {
     font-size: 12px;
 }
 
-footer {
+.rodape {
+    margin: 20px;
     color: #241d1d;
     font-size: 12px;
     text-align: center;
