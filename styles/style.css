@@ -17,6 +17,7 @@ body {
     margin: auto;
     background-color: #ffff;
     font-size: 100%;
+    /* background: linear-gradient(68.15deg, #b98c95 16.62%, #fdcbc0 85.61%);*/
 }
 
 i {
@@ -28,7 +29,7 @@ i {
     border: none;
     background-color: var(--color-secundary);
     border-radius: 50px;
-    margin: 60px auto;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +57,7 @@ i {
 }
 
 
-/* -- Cabeçalho -- */
+/* -- Cabeçaljo -- */
 
 .cabecalho {
     display: flex;
@@ -72,25 +73,25 @@ i {
     height: 100px;
 }
 
-i#menu-dinamic {
-    display: none;
-}
-
 .menu {
     display: flex;
-    justify-items: flex-end;
+    justify-items: end;
     flex-direction: row;
-    flex-flow: row wrap;
+    align-items: center;
     list-style-type: none;
 }
 
-.tipe-button {
+.menu-item {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
+}
+
+.tipe-button {
     margin-right: 20px;
-    padding: 0 20px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
     border: solid 1px var(--color-secundary);
     border-radius: 50px;
     text-decoration: none;
@@ -151,13 +152,20 @@ i#menu-dinamic {
     font-weight: 400;
     font-size: 24px;
     text-align: justify;
-    line-height: 1.5;
 }
 
 .link-saiba-mais {
     margin-top: 50px;
-    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--color-secundary);
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
     color: white;
 }
 
@@ -181,16 +189,11 @@ i#menu-dinamic {
 
 .conteudo-secundario-titulo {
     display: block;
-    margin: 50px auto 20px auto;
+    margin: 50px auto 0px auto;
     font-weight: 900;
     font-size: 38px;
     color: var(--color-title);
     text-transform: uppercase;
-}
-
-.conteudo-secundario-realto-experiencia {
-    display: flex;
-    flex-direction: column;
 }
 
 .conteudo-secundario-contatos {
@@ -246,20 +249,12 @@ i#menu-dinamic {
     font-size: 12px;
 }
 
-
-/*-- Rodapé --*/
-
 .rodape {
-    background-color: var(--main-text-color);
-    margin: 5px auto;
-    color: var(--color-title);
+    margin: 20px;
+    color: #241d1d;
     font-size: 12px;
     text-align: center;
-    padding: 20px;
 }
-
-
-/* --- Media Queries ---*/
 
 @media screen and (max-width:1200px) {
     .conteudo {
@@ -297,7 +292,13 @@ i#menu-dinamic {
         border-bottom: 0.2px solid rgba(206, 180, 183, .2);
     }
     .tipe-button {
+        margin-right: 20px;
+        width: 130px;
         height: 40px;
+    }
+    .conteudo {
+        width: 90%;
+        margin: auto 50px;
     }
     .conteudo-primario-descricao p:first-child {
         font-weight: 500;
@@ -321,25 +322,6 @@ i#menu-dinamic {
 }
 
 @media screen and (max-width:600px) {
-    i#menu-dinamic {
-        visibility: visible;
-        display: block;
-        width: 100vw;
-        text-align: center;
-        padding: 20px;
-        color: var(--color-title);
-        font-size: xx-large;
-    }
-    i#menu-dinamic:hover {
-        color: var(--color-secundary);
-    }
-    .menu {
-        display: none;
-        flex-direction: column;
-    }
-    .menu-item {
-        margin: 10px 40px;
-    }
     .cabecalho {
         display: flex;
         align-items: center;
@@ -350,6 +332,10 @@ i#menu-dinamic {
     #logo {
         display: block;
         height: 100px;
+    }
+    .conteudo {
+        width: 90%;
+        margin: 0px 20px;
     }
     .separator {
         display: none;
