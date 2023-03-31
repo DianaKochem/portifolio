@@ -114,7 +114,7 @@ i#menu-dinamic {
 }
 
 .conteudo-primario {
-    margin-top: 80px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -123,6 +123,7 @@ i#menu-dinamic {
 }
 
 .conteudo-primario-descricao {
+    margin-left: 5px;
     display: flex;
     flex-direction: column;
     min-width: 200px;
@@ -166,9 +167,8 @@ i#menu-dinamic {
 }
 
 .conteudo-primario-imagem {
-    margin-left: 20px;
-    max-width: 100%;
-    width: 800px;
+    max-width: 800px;
+    width: 50%;
 }
 
 
@@ -282,7 +282,7 @@ i#menu-dinamic {
     }
     .conteudo-primario-imagem {
         margin-left: 10px;
-        width: 300px;
+        /* width: 300px;*/
         max-width: 100%;
     }
 }
@@ -315,7 +315,6 @@ i#menu-dinamic {
     }
     .conteudo-primario-imagem {
         margin-left: 10px;
-        width: 250px;
         max-width: 100%;
     }
 }
@@ -381,4 +380,28 @@ i#menu-dinamic {
         width: 250px;
         max-width: 100%;
     }
+}
+
+
+/*---- Edição do Scrollbar da páginas ----*/
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-secundary);
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-title);
 }
