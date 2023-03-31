@@ -280,11 +280,6 @@ i#menu-dinamic {
         font-size: 18px;
         text-align: justify;
     }
-    .conteudo-primario-imagem {
-        margin-left: 10px;
-        /* width: 300px;*/
-        max-width: 100%;
-    }
 }
 
 @media screen and (max-width:900px) {
@@ -312,10 +307,6 @@ i#menu-dinamic {
         font-weight: 400;
         font-size: 18px;
         text-align: justify;
-    }
-    .conteudo-primario-imagem {
-        margin-left: 10px;
-        max-width: 100%;
     }
 }
 
@@ -376,7 +367,7 @@ i#menu-dinamic {
         text-align: justify;
     }
     .conteudo-primario-imagem {
-        margin-left: 10px;
+        margin-bottom: 10px;
         width: 250px;
         max-width: 100%;
     }
